@@ -14,6 +14,7 @@ For this project, we will be creating a dataframe of Amazon customer reviews fro
 `Number of records in office_products_df: 2,642,434` <br>
 `Number of records in health_personal_care_df: 5,331,449`
 
+<hr>
 
 ### Transform
 For each dataset, we create 4 separate tables to be loaded into our Amazon RDS (relational databases).
@@ -34,6 +35,7 @@ This table will only contain one instance of the same customer as well, and so a
 The vine table consists of the `star_ratings` left by each individual customer.
 This data is stored as an integer from 1 to 5.
 
+<hr>
 
 ### Load
 The completed dataframes are finally loaded to their corresponding tables into an Amazon RDS instance.
