@@ -7,11 +7,13 @@ Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon m
 A list of the various product review datasets can be found at the following link: <br>
 https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt
 
+
 ### Extract
 For this project, we will be creating a dataframe of Amazon customer reviews from various <b>office</b> and <b>health/personal care</b> products with PySpark in Google Colaboratory.
 
 `Number of records in office_products_df: 2,642,434` <br>
 `Number of records in health_personal_care_df: 5,331,449`
+
 
 ### Transform
 For each dataset, we create 4 separate tables to be loaded into our Amazon RDS (relational databases).
@@ -31,3 +33,7 @@ This table will only contain one instance of the same customer as well, and so a
 #### vine_table
 The vine table consists of the `star_ratings` left by each individual customer.
 This data is stored as an integer from 1 to 5.
+
+
+### Load
+The completed dataframes are finally loaded to their corresponding tables into an Amazon RDS instance.
