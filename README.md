@@ -38,7 +38,7 @@ This data is stored as an integer from 1 to 5.
 <hr>
 
 ### Load
-The completed dataframes are finally loaded to their corresponding tables into an Amazon RDS instance.
+The completed dataframes are finally loaded to their corresponding tables into an Amazon RDS instance.<br>
 `review_id_table.write.jdbc(url=jdbc_url, table='review_id_table', mode=mode, properties=config)`<br><br>
 `products.write.jdbc(url=jdbc_url, table='products', mode=mode, properties=config)`<br><br>
 `customers.write.jdbc(url=jdbc_url, table='customers', mode=mode, properties=config)`<br><br>
