@@ -10,7 +10,7 @@ https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt
 ### Extract
 For this project, we will be creating a dataframe of Amazon customer reviews from various <b>office</b> and <b>health/personal care</b> products with PySpark in Google Colaboratory.
 
-`Number of records in office_products_df: 2,642,434`
+`Number of records in office_products_df: 2,642,434` <br>
 `Number of records in health_personal_care_df: 5,331,449`
 
 ### Transform
